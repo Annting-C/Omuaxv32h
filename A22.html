@@ -66,11 +66,9 @@
             canvas.width = cameraView.videoWidth;
             canvas.height = cameraView.videoHeight;
             
-            //ctx.drawImage(cameraView, 0, 0, canvas.width, canvas.height);
-            ctx.drawImage(cameraView, 0, 0, 475, 844);
+            ctx.drawImage(cameraView, 0, 0, canvas.width, canvas.height);
             ctx.globalAlpha = 1; // 調整此值以改變濾鏡強度
-            //ctx.drawImage(images[currentFrame], 0, 0, canvas.width, canvas.height);
-            ctx.drawImage(images[currentFrame], 0, 0, 475, 844);
+            ctx.drawImage(images[currentFrame], 0, 0, canvas.width, canvas.height);
             ctx.globalAlpha = 1.0;
             
             currentFrame = (currentFrame + 1) % frameCount;
@@ -90,10 +88,9 @@
         preloadImages();
         setupCamera();
         cameraView.addEventListener('loadedmetadata', function() {
-            //canvas.width = cameraView.videoWidth;
-            //canvas.height = cameraView.videoHeight;
-            canvas.width = 475;
-            canvas.height = 844;
+            canvas.width = cameraView.videoWidth;
+            canvas.height = cameraView.videoHeight;
+        
  
         });
     </script>
