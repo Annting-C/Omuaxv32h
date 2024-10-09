@@ -6,7 +6,7 @@
     <title>Sequence Image Filter Camera</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: Noto Sans TC, sans-serif;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -14,25 +14,50 @@
             padding: 20px;
             background-color: #f0f0f0;
         }
-        #cameraView, #canvas {
+        .video{
+            width: 500;
+            height: 800;
+            position: fixed;
+            top: 200;
+            left:100;
+        }
+        .canvas{
+            width: 500;
+            height: 800;
+            position: fixed;
+            top: 200;
+            left:100;
+        }
+        /*#cameraView, #canvas {
             width: 100%;
             max-width: 500px;
+            max-height: 800px;
             margin-bottom: 20px;
-        }
+        }*/
         button {
             padding: 10px 20px;
             font-size: 16px;
             margin: 5px;
             cursor: pointer;
         }
+        .container{
+            margin: 0 auto;
+            position: relative;
+            align-items: center;
+            display: flex;
+        }
     </style>
 </head>
 <body>
-    <img src="omu.png"/>
     <h1>雁行吟草 Filter Camera</h1>
-    <video id="cameraView" autoplay></video>
-    <canvas id="canvas"></canvas>
-    <button id="Take a Shot">Take a Shot</button>
+    <div class="container">
+        <video id="cameraView" class="video" autoplay></video>
+        <canvas id="canvas" class="canvas"></canvas>
+    </div>
+    <div class="container">
+        <button id="Take a Shot">Take a Shot</button>
+    </div>
+    
 
     <script>
         const cameraView = document.getElementById('cameraView');
@@ -41,15 +66,17 @@
         const toggleFilterBtn = document.getElementById('Take a Shot');
         let filterActive = false;
         let currentFrame = 0;
-        const frameCount = 24; // 根據您的序列圖片數量調整
+        const frameCount = 242; // 根據您的序列圖片數量調整
         const images = [];
 
         // 預加載序列圖片
         function preloadImages() {
             for (let i = 0; i < frameCount; i++) {
                 const img = new Image();
-                img.src="omu.png"
+                const paddedNumber = String(i).padStart(5, "0");
+                img.src="Duck1/Duck1_" + paddedNumber + ".png"
                 images.push(img);
+
             }
         }
 
@@ -61,7 +88,7 @@
 
         // 應用圖片序列濾鏡
         function applySequenceFilter() {
-            if (!filterActive) return;
+           if (!filterActive) return;
             
             canvas.width = cameraView.videoWidth;
             canvas.height = cameraView.videoHeight;
@@ -93,6 +120,8 @@
         
  
         });
+        
+        
     </script>
 </body>
 </html>
