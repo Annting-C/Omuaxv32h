@@ -7,12 +7,13 @@
     <style>
         body {
             font-family: Noto Sans TC, sans-serif;
+            color: #6b5432;
             display: flex;
             flex-direction: column;
             align-items: center;
             margin: 0;
             padding: 20px;
-            background-color: #E8FFF5;
+            background-color: #FFF8D7;
         }
         .video{
             width: 475;
@@ -35,16 +36,30 @@
             margin-bottom: 20px;
         }*/
         button {
-            padding: 10px 20px;
-            font-size: 16px;
-            margin: 5px;
-            cursor: pointer;
+            background: url(dslr-camera.png)white ;
+            background-position: center;
+            background-repeat:
+            no-repeat;
+            background-size: 60%;
+            width: 50px;
+            height: 50px;
+            border-radius: 50px;
+            outline: none;
+            border: none;
+            margin-bottom: 10px;
         }
         .container{
             margin: 0 auto;
             position: relative;
             align-items: center;
             display: flex;
+        }
+        button:hover{
+            background: url(dslr-camera.png)black ;
+            background-position: center;
+            background-repeat:
+            no-repeat;
+            background-size: 60%;
         }
         @media (min-width:991px) {
   .display-in-mobile {
@@ -65,7 +80,7 @@
         <canvas id="canvas" class="canvas"></canvas>
     </div>
     <div class="container">
-        <button id="Take a Shot">Take a Shot</button>
+        <button id="Take a Shot"></button>
     </div>
     
 
