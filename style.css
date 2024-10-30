@@ -1,0 +1,130 @@
+body {
+    font-family: Noto Sans TC, sans-serif;
+    color: #6b5432;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 10px;
+    background-color: #FFF8D7;
+}
+.video{
+    width: 475;
+    height: auto;
+    position: absolute;
+    margin-top: 500px;
+    margin-left: -320px;
+}
+.canvas{
+    width: 475;
+    height: auto;
+    position: absolute;
+    margin-top: 500px;
+    margin-left: -320px;
+}
+/*#cameraView, #canvas {
+    width: 100%;
+    max-width: 500px;
+    max-height: 800px;
+    margin-bottom: 20px;
+}*/
+button {
+    background: url(dslr-camera-1.png)white ;
+    background-position: center;
+    margin-top: 550px;
+    background-repeat:
+    no-repeat;
+    background-size: 60%;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    border: 2px solid goldenrod;
+    margin-bottom: 50px;
+}
+.container{
+    position: relative;
+    align-items: center;
+    display: flex;
+}
+button:hover{
+    background: url(dslr-camera.png) goldenrod ;
+    background-position: center;
+    background-repeat:
+    no-repeat;
+    background-size: 60%;
+}
+
+.btn {
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    min-width: 200px;
+    background: #FFFFFF;
+    border: 2px solid goldenrod;
+    border-radius: 4px;
+    color: goldenrod;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.5s;
+    padding: 10px 20px;
+}
+.btn span {
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    background-color: goldenrod;
+    transform: translateY(150%);
+    border-radius: 50%;
+    left: calc((var(--n) - 1) * 25%);
+    transition: 0.5s;
+    transition-delay: calc((var(--n) - 1) * 0.1s);
+    z-index: -1;
+}
+.btn:hover,
+.btn:focus {
+    color: white;
+}
+.btn:hover span {
+    transform: translateY(0) scale(2);
+}
+.btn span:nth-child(1) {
+    --n: 1;
+}
+.btn span:nth-child(2) {
+    --n: 2;
+}
+.btn span:nth-child(3) {
+    --n: 3;
+}
+.btn span:nth-child(4) {
+    --n: 4;
+}
+
+.btn1 {
+    min-width: 200px;
+    border-radius: 4px;
+    border: 2px solid goldenrod;
+    align-items: center;
+    background-color: white;
+    text-align: center;
+    color: goldenrod;
+    font-size: 1rem;
+    padding: 10px 20px;
+    margin-top: 10px;
+
+}
+
+@media (min-width:991px) {
+.display-in-mobile {
+display: none;
+}
+}
+@media (max-width:991px) {
+.display-in-desktop {
+display: none;
+}
+}
