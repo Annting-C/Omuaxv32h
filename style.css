@@ -9,44 +9,48 @@ body {
     background-color: #FFF8D7;
 }
 .video{
-    width: 475;
+    width: 150%;
     height: auto;
-    position: absolute;
-    margin-top: 500px;
-    margin-left: -320px;
+    position: relative;
+    align-items: center;
 }
 .canvas{
-    width: 475;
+    width: 150%;
     height: auto;
-    position: absolute;
-    margin-top: 500px;
-    margin-left: -320px;
+    position: relative;
+    align-items: center;
+    margin-left: -150px;
 }
+
+
 /*#cameraView, #canvas {
     width: 100%;
     max-width: 500px;
     max-height: 800px;
     margin-bottom: 20px;
 }*/
-button {
-    background: url(camera-pic.png)white ;
-    background-position: center;
-    margin-top: 550px;
-    background-repeat:
-    no-repeat;
-    background-size: 60%;
-    width: 50px;
-    height: 50px;
-    border-radius: 50px;
-    border: 2px solid goldenrod;
-    margin-bottom: 50px;
-}
-.container{
+
+.container {
     position: relative;
     align-items: center;
     display: flex;
 }
-button:hover{
+
+button {
+    background: url(camera-pic.png)white ;
+    background-position: center;
+    margin-top: 50px;
+    background-repeat:
+    no-repeat;
+    background-size: 60%;
+    width: 150px;
+    height: 150px;
+    border-radius: 150px;
+    border: 5px solid goldenrod;
+    margin-bottom: 50px;
+}
+
+button:hover {
     background: url(camera-pic2.png) goldenrod ;
     background-position: center;
     background-repeat:
@@ -54,16 +58,32 @@ button:hover{
     background-size: 60%;
 }
 
+.switchCamera {
+    position: absolute;
+    background: url(switch-camera.png)white ;
+    background-position: center;
+    margin-top: 1500px;
+    margin-left: 400px;
+    background-repeat:
+    no-repeat;
+    background-size: 60%;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    border: 2px solid goldenrod;
+    margin-bottom: 10px;
+}
+
 .btn {
     display: inline-block;
     position: relative;
     z-index: 1;
-    min-width: 200px;
+    min-width: 500px;
     background: #FFFFFF;
     border: 2px solid goldenrod;
     border-radius: 4px;
     color: goldenrod;
-    font-size: 1rem;
+    font-size: 2rem;
     text-transform: uppercase;
     font-weight: bold;
     text-align: center;
@@ -105,16 +125,17 @@ button:hover{
 }
 
 .btn1 {
-    min-width: 200px;
+    min-width: 500px;
     border-radius: 4px;
     border: 2px solid goldenrod;
     align-items: center;
     background-color: white;
     text-align: center;
     color: goldenrod;
-    font-size: 1rem;
+    font-size: 2rem;
+    font-weight: bold;
     padding: 10px 20px;
-    margin-top: 10px;
+    margin-top: 20px;
 
 }
 

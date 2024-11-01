@@ -10,13 +10,16 @@
     <h1>雁行吟草</h1>
     <h2>SKYWEAVER PASSAGE</h2>
     <div class="container">
-        <video id="cameraView" class="video" autoplay></video>
+        <video id="cameraView" class="video" autoplay muted playsinline></video>
         <canvas id="canvas" class="canvas"></canvas>
+        <canvas id = "canvasA" class = "canvasA"></canvas>
     </div>
     <div class="container">
         <button id="Take a Shot"></button>
     </div>
-    <a href="javascript: void(0)" class="btn">
+<!--切換鏡頭按鈕-->
+    <a href="javascript: void(0)" class = "switchCamera" onclick="switchCamera()"></a>
+    <a href="javascript: void(0)" class = "btn">
         CHANGE FILTERS
         <span></span><span></span><span></span><span></span>
     </a>
