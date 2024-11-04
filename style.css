@@ -12,7 +12,7 @@ body {
 .video{
     width: 300%;
     height: auto;
-    position: absolute;
+    position: relative;
     align-items: center;
     margin-left: -150px;
     margin-top: 200px;
