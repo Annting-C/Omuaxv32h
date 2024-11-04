@@ -1,3 +1,4 @@
+
 body {
     font-family: Noto Sans TC, sans-serif;
     color: #6b5432;
@@ -11,13 +12,13 @@ body {
 .video{
     width: 150%;
     height: auto;
-    position: relative;
+    position: absolute;
     align-items: center;
 }
 .canvas{
     width: 150%;
     height: auto;
-    position: relative;
+    position: absolute;
     align-items: center;
     margin-left: -150px;
 }
