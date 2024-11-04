@@ -10,14 +10,14 @@ body {
     background-color: #FFF8D7;
 }
 .video{
-    width: 475;
+    width: 945;
     height: auto;
     position: absolute;
     align-items: center;
     margin-top: 500px;
 }
 .canvas{
-    width: 475;
+    width: 945;
     height: auto;
     position: absolute;
     align-items: center;
