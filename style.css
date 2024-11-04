@@ -10,7 +10,7 @@ body {
     background-color: #FFF8D7;
 }
 .video{
-    width: 1000;
+    width: 1500;
     height: auto;
     position: absolute;
     align-items: center;
@@ -18,7 +18,7 @@ body {
     margin-left: -150%;
 }
 .canvas{
-    width: 1000;
+    width: 1500;
     height: auto;
     position: absolute;
     align-items: center;
