@@ -15,7 +15,6 @@ body {
     position: absolute;
     align-items: center;
     margin-top: 500px;
-    margin-left: -150%;
 }
 .canvas{
     width: 1500;
@@ -23,7 +22,6 @@ body {
     position: absolute;
     align-items: center;
     margin-top: 500px;
-    margin-left: -150%;
 }
 
 
