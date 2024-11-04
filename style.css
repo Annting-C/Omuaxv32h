@@ -10,14 +10,14 @@ body {
     background-color: #FFF8D7;
 }
 .video{
-    width: 945;
+    width: 1000;
     height: auto;
     position: absolute;
     align-items: center;
     margin-top: 500px;
 }
 .canvas{
-    width: 945;
+    width: 1000;
     height: auto;
     position: absolute;
     align-items: center;
@@ -41,7 +41,7 @@ body {
 button {
     background: url(camera-pic.png)white ;
     background-position: center;
-    margin-top: 800px;
+    margin-top: 500px;
     background-repeat:
     no-repeat;
     background-size: 60%;
