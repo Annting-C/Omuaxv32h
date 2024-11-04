@@ -10,7 +10,7 @@ body {
     background-color: #FFF8D7;
 }
 .video{
-    width: 150%;
+    width: 475;
     height: auto;
     position: absolute;
     align-items: center;
@@ -21,7 +21,7 @@ body {
     height: auto;
     position: absolute;
     align-items: center;
-    margin-top: 00px;
+    margin-top: 500px;
 }
 
 
