@@ -14,16 +14,14 @@ body {
     height: auto;
     position: absolute;
     align-items: center;
-    margin-left: -200px;
-    margin-top: 200px;
+    margin-top: 800px;
 }
 .canvas{
-    width: 150%;
+    width: 475;
     height: auto;
     position: absolute;
     align-items: center;
-    margin-left: -200px;
-    margin-top: 200px;
+    margin-top: 800px;
 }
 
 
