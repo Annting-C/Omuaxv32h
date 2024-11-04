@@ -14,6 +14,8 @@ body {
     height: auto;
     position: absolute;
     align-items: center;
+    margin-left: -150px;
+    margin-top: 200px;
 }
 .canvas{
     width: 300%;
@@ -21,6 +23,7 @@ body {
     position: absolute;
     align-items: center;
     margin-left: -150px;
+    margin-top: 200px;
 }
 
 
