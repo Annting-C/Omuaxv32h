@@ -14,14 +14,14 @@ body {
     height: auto;
     position: absolute;
     align-items: center;
-    margin-top: 800px;
+    margin-top: 500px;
 }
 .canvas{
     width: 475;
     height: auto;
     position: absolute;
     align-items: center;
-    margin-top: 800px;
+    margin-top: 00px;
 }
 
 
@@ -41,7 +41,7 @@ body {
 button {
     background: url(camera-pic.png)white ;
     background-position: center;
-    margin-top: 50px;
+    margin-top: 800px;
     background-repeat:
     no-repeat;
     background-size: 60%;
