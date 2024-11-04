@@ -29,11 +29,11 @@ const cameraView = document.getElementById('cameraView');
 
 
         // 訪問相機
-       /* async function setupCamera() {
+        async function setupCamera() {
             const stream = await navigator.mediaDevices.getUserMedia({ video: true, audio: false });
             cameraView.srcObject = stream;
             
-        }*/
+        }
 
         // 應用圖片序列濾鏡
         function applySequenceFilter() {
