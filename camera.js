@@ -41,8 +41,8 @@ const cameraView = document.getElementById('cameraView');
         function applySequenceFilter() {
            if (!filterActive) return;
             
-            canvas.width = 393;
-            canvas.height = 852;
+           canvas.width = cameraView.videoWidth;
+            canvas.height = cameraView.videoHeight;
             
             ctx.drawImage(cameraView, 0, 0, canvas.width, canvas.height);
             ctx.globalAlpha = 1; // 調整此值以改變濾鏡強度
